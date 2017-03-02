@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G31" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" inverseName="categories" inverseEntity="Meal" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="name"/>
+        </userInfo>
+    </entity>
+    <entity name="Meal" representedClassName="Meal" syncable="YES">
+        <attribute name="daytime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="meal_day"/>
+            </userInfo>
+        </attribute>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="meal_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="mealDescirption" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="meal_description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="mealTitle" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="meal_title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pictureURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="meal_picture"/>
+            </userInfo>
+        </attribute>
+        <attribute name="syncstate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uploadingPictureURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Category" inverseName="meals" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-162" positionY="-129" width="128" height="75"/>
+        <element name="Meal" positionX="-117" positionY="-72" width="128" height="165"/>
+    </elements>
+</model>

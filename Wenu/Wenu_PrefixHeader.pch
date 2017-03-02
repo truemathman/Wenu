@@ -1,0 +1,24 @@
+//
+//  Wenu_PrefixHeader.pch
+//  Wenu
+//
+//  Created by Ruslan Kurmakaev on 25/07/16.
+//  Copyright © 2016 rkurmakaev. All rights reserved.
+//
+
+#ifndef Wenu_PrefixHeader_pch
+#define Wenu_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "NSDate+Weeks.h"
+#import "CALayer+Animations.h"
+#import "NSURLRequest+NSURLRequestSSLY.h"
+#import "UIColor+ApplicationColors.h"
+#import "UIButton+AppliationButtons.h"
+
+static NSString * const WNCalendarFirstWekDayChangedNotification = @"WNCalendarFirstWekDayChangedNotification";
+static NSString * const WNFirstWeekDayNumberNotification = @"WNFirstWeekDayNumberNotification";
+
+#endif /* Wenu_PrefixHeader_pch */

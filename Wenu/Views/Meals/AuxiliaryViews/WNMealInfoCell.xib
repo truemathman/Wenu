@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2NS-ck-0aj" customClass="WNMealInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2NS-ck-0aj" id="s6s-Hq-Myv">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="Zfq-M6-UOQ" userLabel="Container View">
+                        <rect key="frame" x="20" y="4" width="222" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Meal Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGS-VJ-twl" userLabel="Title">
+                                <rect key="frame" x="0.0" y="0.0" width="222" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Marked for uploading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYn-DH-7ox" userLabel="Sync State">
+                                <rect key="frame" x="0.0" y="19" width="222" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.46666666666666667" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dGS-VJ-twl" secondAttribute="trailing" id="0nA-rE-SaT"/>
+                            <constraint firstAttribute="trailing" secondItem="aYn-DH-7ox" secondAttribute="trailing" id="13C-eI-yKU"/>
+                            <constraint firstItem="aYn-DH-7ox" firstAttribute="leading" secondItem="Zfq-M6-UOQ" secondAttribute="leading" id="7Hc-OP-GLN"/>
+                            <constraint firstItem="aYn-DH-7ox" firstAttribute="top" secondItem="dGS-VJ-twl" secondAttribute="bottom" id="JbL-Ua-coO"/>
+                            <constraint firstItem="dGS-VJ-twl" firstAttribute="top" secondItem="Zfq-M6-UOQ" secondAttribute="top" id="Ob1-h3-8Jg"/>
+                            <constraint firstAttribute="bottom" secondItem="aYn-DH-7ox" secondAttribute="bottom" id="Ouv-ed-sYc"/>
+                            <constraint firstItem="dGS-VJ-twl" firstAttribute="leading" secondItem="Zfq-M6-UOQ" secondAttribute="leading" id="eQh-K5-TcV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-pB-aPg" userLabel="Time">
+                        <rect key="frame" x="262" y="13" width="38" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Si0-pB-aPg" secondAttribute="trailing" constant="20" id="5eQ-nc-c77"/>
+                    <constraint firstItem="Si0-pB-aPg" firstAttribute="leading" secondItem="Zfq-M6-UOQ" secondAttribute="trailing" constant="20" id="CjA-a7-we4"/>
+                    <constraint firstItem="Si0-pB-aPg" firstAttribute="centerY" secondItem="s6s-Hq-Myv" secondAttribute="centerY" id="HLR-GL-ytN"/>
+                    <constraint firstItem="Zfq-M6-UOQ" firstAttribute="leading" secondItem="s6s-Hq-Myv" secondAttribute="leading" constant="20" id="Wkk-ug-jTy"/>
+                    <constraint firstItem="Zfq-M6-UOQ" firstAttribute="centerY" secondItem="s6s-Hq-Myv" secondAttribute="centerY" id="w3m-a0-iXK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="syncstateLabel" destination="aYn-DH-7ox" id="t26-r3-hku"/>
+                <outlet property="timeLabel" destination="Si0-pB-aPg" id="b9n-63-Wud"/>
+                <outlet property="titleLabel" destination="dGS-VJ-twl" id="0jX-rk-Ghm"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="312"/>
+        </tableViewCell>
+    </objects>
+</document>
